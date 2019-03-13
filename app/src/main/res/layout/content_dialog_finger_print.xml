@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imgLogo"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_toEndOf="@+id/imgLogo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dialog_title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/itemSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xxsmall"
+            android:textColor="@color/dialog_subtitle"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/itemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_view"
+        android:layout_marginStart="@dimen/margin_xsmall"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:textColor="@color/dialog_description" />
+
+    <ImageView
+        android:id="@+id/imgFingerprint"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/itemDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/bg_finger_print"
+        android:padding="14dp"
+        android:src="@drawable/ic_finger_print" />
+
+
+    <TextView
+        android:id="@+id/itemStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFingerprint"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:gravity="center"
+        android:textColor="@color/dialog_status" />
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemStatus"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:background="@null"
+        android:paddingTop="@dimen/margin_xxlarge"
+        android:textColor="@color/dialog_cancel_btn" />
+
+</RelativeLayout>

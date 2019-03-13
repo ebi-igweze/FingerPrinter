@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FingerPrinter</string>
+    <string name="title_biometric_prompt">Place you finger on the finger print scanner to verify identity</string>
+    <string name="title_login">Login</string>
+    <string name="title_login_description">Login to Finger Printer</string>
+    <string name="biometric_failed">Biometric Authentication Failed</string>
+    <string name="biometric_cancelled">Biometric Authentication Cancelled</string>
+    <string name="hardware_not_supported">This device does not support finger print</string>
+    <string name="sdk_not_supported">Finger print reader is not supported in this Android version</string>
+    <string name="no_fingerprint_available">No finger print available</string>
+</resources>
